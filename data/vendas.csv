@@ -1,0 +1,98 @@
+produto,quantidade,preco
+Notebook,2,3500
+Mouse,5,100
+Teclado,3,150
+Monitor,4,1200
+Headset,6,250
+Webcam,8,300
+Impressora,2,800
+Scanner,1,600
+Roteador,3,350
+Switch,2,450
+Cabo HDMI,15,50
+Cabo USB,20,30
+Hub USB,7,80
+SSD 256GB,10,200
+SSD 512GB,8,350
+HD Externo 1TB,5,280
+Memória RAM 8GB,12,180
+Memória RAM 16GB,6,320
+Placa de Vídeo,3,2500
+Processador Intel i5,4,1100
+Processador Intel i7,2,1800
+Processador AMD Ryzen 5,3,950
+Placa-Mãe,4,700
+Fonte 600W,5,300
+Gabinete,3,250
+Cooler,8,120
+Pasta Térmica,20,25
+Tela Protetora,10,60
+Suporte para Monitor,5,150
+Mesa Digitalizadora,2,400
+Caixa de Som,6,180
+Microfone,4,220
+Cadeira Gamer,3,1500
+Mousepad Gamer,10,70
+Teclado Mecânico,4,350
+Mouse Gamer,5,200
+Controle Xbox,6,350
+Controle PS5,4,450
+Joystick,3,180
+Headset Gamer,5,300
+Pen Drive 32GB,15,40
+Pen Drive 64GB,12,65
+Cartão SD 64GB,10,55
+Leitor de Cartão,8,45
+Adaptador USB-C,12,60
+Cabo de Rede,20,25
+Nobreak 1200VA,2,650
+Estabilizador,4,200
+Filtro de Linha,10,80
+Régua Extensão,8,55
+Suporte para Notebook,6,130
+Mochila para Notebook,5,160
+Capa para Notebook,7,90
+Teclado Bluetooth,4,180
+Mouse Bluetooth,6,150
+Carregador USB,10,45
+Power Bank 10000mAh,8,120
+Power Bank 20000mAh,5,200
+Leitor Biométrico,3,350
+Câmera IP,4,280
+Gravador DVR,2,500
+Disco para DVR 2TB,3,380
+Smart TV 43,2,1800
+Smart TV 55,1,2800
+Streaming Box,5,250
+Cabo de Alimentação,15,20
+Suporte de Parede TV,4,120
+Caixa de Som Bluetooth,7,200
+Fone de Ouvido,10,80
+Fone sem Fio,6,250
+Tablet 10,3,900
+Tablet 8,4,600
+Capa para Tablet,8,55
+Teclado para Tablet,5,130
+Caneta Stylus,6,70
+Bateria para Notebook,4,280
+Tela para Notebook,2,600
+Dobradiça Notebook,3,120
+Teclado Numérico,8,60
+Webcam Full HD,5,380
+Luz Ring Light,4,220
+Tripé para Câmera,3,180
+Cartão de Memória 128GB,10,90
+Adaptador HDMI VGA,8,35
+Adaptador DisplayPort,6,40
+KVM Switch,2,300
+Rack de Servidor,1,1200
+Patch Panel,2,400
+Organizador de Cabos,10,30
+Etiquetadora,3,180
+Projetor,1,2200
+Tela de Projeção,1,800
+Calculadora Científica,5,100
+Scanner de Código de Barras,3,250
+Impressora Térmica,2,600
+Gaveta de Dinheiro,1,350
+Pin Pad,2,450

@@ -1,0 +1,208 @@
+# 🚀 Projeto ETL de Vendas com Dashboard
+
+## 📌 Descrição
+
+Este projeto tem como objetivo demonstrar, na prática, um pipeline de **Engenharia de Dados (ETL)** completo, desde a extração dos dados até a visualização em um dashboard interativo.
+
+O sistema realiza:
+
+* **Extração** de dados a partir de um arquivo CSV
+* **Transformação** dos dados (limpeza e cálculo de métricas)
+* **Carga (Load)** dos dados em um banco de dados MySQL
+* **Visualização** dos dados através de um dashboard com Streamlit
+
+---
+
+## 🧱 Arquitetura do Projeto
+
+```
+projeto_etl_vendas/
+│
+├── data/                  # Dados brutos (CSV)
+│   └── vendas.csv
+│
+├── scripts/
+│   ├── extract.py         # Extração dos dados
+│   ├── transform.py       # Transformação dos dados
+│   └── load.py            # Inserção no banco
+│
+├── database/
+│   └── init.sql           # Script de criação da tabela
+│
+├── dashboard.py           # Dashboard com Streamlit
+├── main.py                # Pipeline principal
+├── docker-compose.yml     # Configuração do MySQL
+├── requirements.txt       # Dependências
+└── README.md
+```
+
+---
+
+## ⚙️ Tecnologias Utilizadas
+
+* Python
+* Pandas
+* MySQL
+* Docker
+* Streamlit
+
+---
+
+## 🔄 Pipeline ETL
+
+### 📥 Extract
+
+Leitura dos dados a partir de um arquivo CSV.
+
+### 🔄 Transform
+
+* Remoção de valores nulos
+* Criação da coluna `faturamento`
+
+### 📤 Load
+
+Inserção dos dados no banco MySQL.
+
+---
+
+## 🗄️ Estrutura da Tabela
+
+```sql
+CREATE TABLE vendas (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    produto VARCHAR(100),
+    quantidade INT,
+    preco DECIMAL(10,2),
+    faturamento DECIMAL(10,2)
+);
+```
+
+---
+
+## ▶️ Como Rodar o Projeto
+
+### 🔹 1. Clonar o repositório
+
+```bash
+git clone <seu-repositorio>
+cd projeto_etl_vendas
+```
+
+---
+
+### 🔹 2. Subir o banco de dados (Docker)
+
+```bash
+docker-compose up -d
+```
+
+---
+
+### 🔹 3. Criar ambiente virtual (opcional)
+
+```bash
+python -m venv venv
+```
+
+Ativar:
+
+**Windows:**
+
+```bash
+venv\Scripts\activate
+```
+
+---
+
+### 🔹 4. Instalar dependências
+
+```bash
+pip install -r requirements.txt
+```
+
+---
+
+### 🔹 5. Rodar o pipeline ETL
+
+```bash
+python main.py
+```
+
+---
+
+### 🔹 6. Verificar dados no banco (opcional)
+
+```bash
+docker exec -it mysql_etl mysql -u root -p
+```
+
+Senha:
+
+```
+root
+```
+
+Depois:
+
+```sql
+USE etl_db;
+SELECT * FROM vendas;
+```
+
+---
+
+### 🔹 7. Rodar o dashboard
+
+```bash
+streamlit run dashboard.py
+```
+
+Acesse no navegador:
+
+```
+http://localhost:8501
+```
+
+---
+
+## 📊 Dashboard
+
+O dashboard apresenta:
+
+* 💰 Faturamento total
+* 📦 Quantidade total de produtos
+* 📋 Tabela com os dados
+* 📊 Gráfico de faturamento por produto
+
+---
+
+## 🚀 Melhorias Futuras
+
+* Integração com APIs (dados em tempo real)
+* Automatização do pipeline
+* Adição de filtros no dashboard
+* Deploy do projeto
+* Logs e monitoramento
+
+---
+
+## 💼 Objetivo do Projeto
+
+Este projeto foi desenvolvido com foco em:
+
+* Prática de Engenharia de Dados
+* Construção de portfólio
+* Aplicação real de ETL
+* Integração entre ferramentas
+
+---
+
+## 👨‍💻 Autor
+
+**Welterson Gabriel**
+
+---
+
+## 📌 Observação
+
+Este é um projeto de aprendizado com foco em evolução contínua. Novas melhorias e funcionalidades podem ser adicionadas futuramente.
