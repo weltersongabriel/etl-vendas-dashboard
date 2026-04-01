@@ -1,5 +1,7 @@
 # 🚀 Projeto ETL de Vendas com Dashboard
 
+![Dashboard](img/dash.png)
+
 ## 📌 Descrição
 
 Este projeto tem como objetivo demonstrar, na prática, um pipeline de **Engenharia de Dados (ETL)** completo, desde a extração dos dados até a visualização em um dashboard interativo.
